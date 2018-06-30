@@ -1,11 +1,13 @@
-# Docker container for [jsonld-vis](https://github.com/scienceai/jsonld-vis/)
+# [jsonld-vis](https://github.com/scienceai/jsonld-vis/) in docker container
 
-usage:
+A docker container for a quick try to visualize your json-ld data.
+
+## Usage:
 
 ```
 $ ls
 example.jsonld
-$ docker run -it -v $(pwd):/work -w /work inutano/jsonld-vis
+$ docker run -it -v $(pwd):/work -w /work quay.io/inutano/jsonld-vis
 root@container:/work# ls
 example.jsonld
 root@container:/work# /bundle example.jsonld
